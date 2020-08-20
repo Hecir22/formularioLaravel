@@ -19,7 +19,7 @@ class CreateFormularyTable extends Migration
             $table->string('tipodocumento')->default(1);
             $table->string('numerodocumento', 15);
             $table->string('correo',50);
-            $table->date('fecha_nac')->nullable();
+            $table->string('fecha_nac')->nullable();
             $table->string('direccion',150);
             $table->timestamps();
         });

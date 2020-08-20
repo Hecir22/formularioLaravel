@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="fecha_nac">Fecha de Nacimiento:</label>
-                                <input type="date" max='2020-01-01' min='1950-01-01' id="fecha_nac" name="fecha_nac" class="form-control" placeholder="Fecha completa" value="{{ $formulary->fecha_nac }}" >
+                                <input type="text" max='2020-01-01' min='1950-01-01' id="fecha_nac" name="fecha_nac" class="form-control" placeholder="Fecha completa" value="{{ $formulary->fecha_nac }}" >
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="direccion">Direccion:</label>

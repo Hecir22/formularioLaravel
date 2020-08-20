@@ -19,7 +19,7 @@
                         FORMULARIO
                 </div>
 					<!-- /.card-header -->
-					<form role="form" method="POST" id="formula" name="formula" action="{{ route('formulary.store') }}" >                        
+					<form role="form" method="POST" id="formula" name="formula" action="{{ route('formulary.store') }}" onsubmit="return validarFormulario()" >                        
 						@csrf
                         <div class="card-body">
                             <div class="row">
@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="fecha_nac">Fecha de Nacimiento</label>
-                                    <input  type="date" max='2020-01-01' min='1950-01-01' id="fecha_nac" name="fecha_nac" class="form-control" placeholder="Fecha Completa" autofocus>
+                                    <input  type="text" max='2020-01-01' min='1950-01-01' id="fecha_nac" name="fecha_nac" class="form-control" placeholder="Fecha Completa" autofocus>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="direccion">Direccion</label>
@@ -55,6 +55,7 @@
 						<!-- /.card-body -->
 						<div class="card-footer">
 							<button type="submit" class="float-right btn btn-primary">Registrar</button>
+                            <button type="reset" class="float-left btn btn-secondary" value='Limpiar Formulario'>Limpiar</button>
                             
 						</div>
 					</form>
